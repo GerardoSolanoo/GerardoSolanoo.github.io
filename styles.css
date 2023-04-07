@@ -1,0 +1,81 @@
+/* Estilo base */
+body {
+  background-color: #565f89;
+  color: #c0c5ce;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  }
+  
+  /* Nav */
+  nav {
+  align-items: center;
+  background-color: #414868;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 60px;
+  }
+  
+  nav a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+  text-decoration: none;
+  }
+  
+  nav a:hover {
+  color: #ff69b4;
+  text-decoration: underline;
+  }
+  
+  nav ul {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  }
+  
+  nav li {
+  margin-left: 20px;
+  }
+  
+  /* Encabezado */
+  .text-nav {
+  color: #f8f8f2;
+  float: left;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 20px;
+  }
+  
+  /* Figure */
+  main {
+  text-align: start;
+  }
+  
+  /* Footer */
+footer {
+  background-color: #414868 ;
+  color: #c0c5ce;
+  font-size: 14px;
+  padding: 10px 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #c0c5ce;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #F4CBB2;
+  text-decoration: underline;
+}
