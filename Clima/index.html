@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Información del Clima</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="text-nav">
+          <a href=""><h3>Clima</h3></a>
+        </div>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <figure>
+        <img src="img/nube.png" alt="">
+      </figure>
+      <form>
+        <label for="latitude">Latitud:</label>
+        <input type="text" id="latitude" name="latitude">
+        <label for="longitude">Longitud:</label>
+        <input type="text" id="longitude" name="longitude">    
+        <button type="button" id="get-weather-btn">Obtener clima</button>
+      </form>
+      <section>
+        <div class="info-container">
+          <p>La temperatura actual en la ubicación especificada es de: <span id="temperature"></span>.</p>
+          <p id="description"></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <script src="clima.js"></script>
+        <p>&copy; 2023 - Derechos reservados | Diseñado por Gerardo Solano  </p>
+      </footer>
+      
+  </body>
+</html>
