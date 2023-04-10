@@ -1,81 +1,148 @@
-/* Estilo base */
-body {
-  background-color: #565f89;
-  color: #c0c5ce;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+/* Navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  height: 60px;
+  }
+  
+  .text-nav {
+  font-size: 1.2rem;
+  font-weight: bold;
+  }
+  
+  nav ul {
+  display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
   }
   
-  /* Nav */
-  nav {
-  align-items: center;
-  background-color: #414868;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
-  height: 60px;
-  }
-  
-  nav a {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
+  nav ul li {
   margin-right: 20px;
+  }
+  
+  nav ul li a {
+  color: white;
   text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s;
   }
   
-  nav a:hover {
-  color: #ff69b4;
-  text-decoration: underline;
+  nav ul li a:hover {
+  color: #BB86FC;
   }
   
-  nav ul {
-  align-items: center;
-  display: flex;
-  list-style: none;
-  margin: 0;
-  }
-  
-  nav li {
-  margin-left: 20px;
-  }
-  
-  /* Encabezado */
-  .text-nav {
-  color: #f8f8f2;
-  float: left;
-  margin: 0;
-  margin-top: 30px;
-  margin-left: 20px;
-  }
-  
-  /* Figure */
+  /* General layout */
   main {
-  text-align: start;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  }
+  
+  h2 {
+  margin-top: 50px;
+  }
+  
+  p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  }
+  
+  /* Contact info section */
+  .info-container {
+  display: inline;
+  align-items: center;
+  margin-top: 20px;
+  }
+  
+  .social-media img{
+  width: 40px;
+  height: 40px;
+  }
+  
+  #location, #cel, #email {
+  margin-right: 10px;
+  }
+  
+  #location::before, #cel::before, #email::before {
+  content: "\2022";
+  margin-right: 5px;
+  color: #BB86FC;
+  }
+  
+  #email::before {
+  content: "\2709";
+  }
+  
+  /* Education section */
+  .university {
+  margin-bottom: 20px;
+  }
+  
+  .expected-year{
+  position: relative;
+  top: -45px;
+  left: 600px;
+  }
+  
+  .bachelor{
+  position: relative;
+  top: -50px;
+  }
+
+  .lang{
+    margin-top: 0px;
+  }
+  
+  /* Projects section */
+  .projects-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+  .projects-container li {
+  margin: 0 10px;
+  }
+  
+  .projects-container img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  }
+  
+  li img {
+  width: 30px;
+  margin-right: 10px;
+  }
+  
+  li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+  
+  }
+  
+  li a:hover {
+  color: #BB86FC;
   }
   
   /* Footer */
-footer {
-  background-color: #414868 ;
-  color: #c0c5ce;
-  font-size: 14px;
-  padding: 10px 20px;
+  footer {
+  background-color: #333;
+  color: white;
   text-align: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-footer a {
-  color: #c0c5ce;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #F4CBB2;
-  text-decoration: underline;
 }
