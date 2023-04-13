@@ -9,12 +9,12 @@ function calcularArea(){
     altura = alturaElement.value;
     console.log(base);
     console.log(altura);
+
+    area = (base*altura)/2;
+    console.log(area);
+
+    let areaElement = document.getElementById("resultado");
+    areaElement.innerHTML = "Area = " + area;
 }
 
 calcularArea();
-
-area = (base*altura)/2;
-console.log(area);
-
-let areaElement = document.getElementById("resultado");
-areaElement.innerHTML = "Area = " + area;

@@ -1,148 +1,242 @@
-/* Navigation bar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #333;
-  color: white;
-  height: 60px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5ff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Tarjeta */
+.inner-card {
+    margin: 50px auto;
+    max-width: 900px;
+    height: 920px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* Encabezado */
+header {
+    padding: 30px;
+    color: #000;
+}
+
+.text-header{
+    text-align: center;
+}
+
+.text-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+.text-header h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #555555;
+}
+
+.title-header  {
+    display: inline-block;
+    position: relative;
+}
+
+.title-header h1 {
+    font-size: 2.5rem;
+    transition: font-size 0.3s ease;
+}
+
+.title-header:hover h1 {
+    color:#f5d061;
+    font-size: 3.5rem;
+}
+
+
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-items {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.contact-items img {
+    margin-right: 10px;
+    height: 20px;
+}
+
+.contact-items p {
+    font-size: 16px;
+    color: #555555;
+}
+
+  /* Lado izquierdo */
+.left-side {
+    background-color: #ffffff;
+    width: 60%;
+    padding: 30px;
+    color: #000;
+    float: left;
+}
+
+.education{
+    margin-bottom: 30px;
+}
+
+.education h3,
+.experience h3,
+.interests h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #555555;
+}
+
+.education-item h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+.left-projects{
+    float: left;
+    margin-right: 40px;
+}
+
+.right-projects{
+    float: right;
+}
+
+.experience .job a h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+}
+
+.experience .job a:hover h5 {
+    color: #f5d061;
+}
+.job-text h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #555555;
+    transition: font-size 0.3s ease;
+}
+
+.job-text:hover h5{
+    color:#f5d061;
+    font-size: 2.0rem;
+}
+
+.job-text h6{
+    font-style: italic;
+}
+
+.interests{
+    margin-top: 45px;
+}
+
+.interests-list ul{
+    justify-content: space-evenly;
+    display: flex;
+    list-style: none;
+}
+
+.interests-list li{
+    margin-right: 20px;
+}
+
+.interests-list img{
+    height: 32px;
+    width: 32px;
+}
+
+  /* Lado derecho */
+.right-side {
+    width: 40%;
+    background-color: #ffffff;
+    padding: 30px;
+    float: right;
+}
+
+  .profile h3,
+  .languages h3,
+  .social-media h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #555555;
   }
   
-  .text-nav {
-  font-size: 1.2rem;
-  font-weight: bold;
-  }
-  
-  nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  }
-  
-  nav ul li {
-  margin-right: 20px;
-  }
-  
-  nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-  color: #BB86FC;
-  }
-  
-  /* General layout */
-  main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  }
-  
-  h2 {
-  margin-top: 50px;
-  }
-  
-  p {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  }
-  
-  /* Contact info section */
-  .info-container {
-  display: inline;
-  align-items: center;
-  margin-top: 20px;
-  }
-  
-  .social-media img{
-  width: 40px;
-  height: 40px;
-  }
-  
-  #location, #cel, #email {
-  margin-right: 10px;
-  }
-  
-  #location::before, #cel::before, #email::before {
-  content: "\2022";
-  margin-right: 5px;
-  color: #BB86FC;
-  }
-  
-  #email::before {
-  content: "\2709";
-  }
-  
-  /* Education section */
-  .university {
-  margin-bottom: 20px;
-  }
-  
-  .expected-year{
-  position: relative;
-  top: -45px;
-  left: 600px;
-  }
-  
-  .bachelor{
-  position: relative;
-  top: -50px;
+  .profile-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #555555;
   }
 
-  .lang{
-    margin-top: 0px;
+  .languages{
+    margin-bottom: 30px;
+  }
+
+  .languages-list ul {
+    list-style: none;
+    padding-left: 0;
   }
   
-  /* Projects section */
-  .projects-container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  .languages-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555555;
   }
   
-  .projects-container li {
-  margin: 0 10px;
-  }
-  
-  .projects-container img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  display: block;
-  margin: 0 auto;
-  }
-  
-  li img {
-  width: 30px;
-  margin-right: 10px;
-  }
-  
-  li a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-  transition: color 0.3s;
-  
-  }
-  
-  li a:hover {
-  color: #BB86FC;
-  }
-  
-  /* Footer */
-  footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
+  .social-media-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.social-media-list a {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-media-list img {
+    width: 32px;
+    height: 32px;
+}
+    
+/* Media queries */
+@media screen and (max-width: 900px) {
+.inner-card {
+    margin: 50px 20px;
+}
+
+.left-side {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.right-side {
+    width: 100%;
+}
+.contact-info {
+    justify-content: space-around;
+}
+
 }
